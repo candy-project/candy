@@ -1,0 +1,537 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+#wrap {
+    position: relative;
+    /*height: 100%;*/
+    width: 100%;
+    overflow: hidden;
+}
+#wrap .header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 125px;
+    background: url("../../homepage/img/toop.png") center center no-repeat;
+    z-index: 10;
+    -webkit-animation: bounceInDown .8s;
+    animation: bounceInDown .8s;
+}
+@-webkit-keyframes bounceInDown {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+    }
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+    }
+    90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes bounceInDown {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+    }
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+    }
+    90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+#wrap .header .headerMain {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    line-height: 100px;
+}
+#wrap .header .headerMain .logo {
+    float: left;
+    height: 100px;
+    line-height: 100px;
+}
+#wrap .header .headerMain .logo a img {
+    vertical-align: middle;
+}
+#wrap .header .headerMain .nav {
+    margin-top: 5px;
+    float: right;
+}
+#wrap .header .headerMain .nav a {
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #484848;
+    display: inline-block;
+    margin: 0 5px;
+    border: 1px solid transparent;
+    transition: 0.5s ease-in-out;
+    width: 72px;
+    text-align: center;
+}
+#wrap .header .headerMain .nav a:hover {
+    border: 1px solid #e70112;
+    background: #e70112;
+    color: #fff;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+/*内容*/
+#wrap .contentWrap{
+    position: relative;
+    padding-top: 125px;
+    background: url("../../homepage/img/bb05.png") center 0 no-repeat;
+    /*background-color: pink;*/
+    animation: myfirst 10s linear infinite;
+}
+@keyframes myfirst {
+    0% {
+        background-color: #ffc304;
+    }
+    /*动画开始样式*/
+    25% {
+        background-color: #ff7cab;
+    }
+    70% {
+        background-color: #32cfbc;
+    }
+    100% {
+        background-color: #ffc304;
+    }
+}
+#wrap .contentWrap .content{
+    position: relative;
+    z-index: 1;
+    /*height: 1000px;*/
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 300px;
+    /*background-color: pink;*/
+}
+#wrap .contentWrap .content .title{
+    text-align: center;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation: flipInY 1s linear;
+    animation: flipInY 1s linear;
+}
+
+@-webkit-keyframes flipInY {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    40% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    60% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        opacity: 1;
+    }
+
+    80% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+@keyframes flipInY {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    40% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    60% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        opacity: 1;
+    }
+
+    80% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    }
+
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+
+
+
+#wrap .contentWrap .content .navTab{
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#wrap .contentWrap .content .navTab .navItem{
+    width: 150px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    margin: 0 5px;
+    background-image: url("../../homepage/img/btn02a.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#wrap .contentWrap .content .navTab .navItem a{
+    height: 70px;
+    line-height: 70px;
+    display: block;
+    font-size: 16px;
+    color: #000;
+}
+#wrap .contentWrap .content .navTab .navItem:hover{
+    background-image: url("../../homepage/img/btn02b.png");
+}
+#wrap .contentWrap .content .navTab .navItem:hover a{
+    color: #fff;
+}
+#wrap .contentWrap .content .contentTab {
+    -webkit-animation: fadeInUpBig 1s linear 0s;
+    animation: fadeInUpBig 1s linear 0s;
+}
+#wrap .contentWrap .content .contentTab1{
+    display: block;
+}
+#wrap .contentWrap .content .contentTab1 .concat{
+    color: rgba(30, 30, 30,1);
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #fff;
+}
+#wrap .contentWrap .content .contentTab1 .contentMain{
+    margin-top: 20px;
+    overflow: hidden;
+}
+#wrap .contentWrap .content .contentTab1 .contentMain .contentLeft{
+    float: left;
+    width: 600px;
+    height: 357px;
+}
+#wrap .contentWrap .content .contentTab1 .contentMain .contentLeft p{
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 30px;
+    font-family: "微软雅黑";
+    height: 30px;
+}
+#wrap .contentWrap .content .contentTab1 .contentMain .contentLeft p:nth-child(1){
+    font-size: 20px;
+    font-weight: bold;
+}
+#wrap .contentWrap .content .contentTab1 .contentMain .contentRight{
+    float: right;
+    width: 600px;
+    height: 357px;
+}
+
+#wrap .contentWrap .content .contentTab2{
+    display: none;
+}
+#wrap .contentWrap .content .contentTab2 .map{
+    color: rgba(30, 30, 30,1);
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #fff;
+}
+#wrap .contentWrap .content .contentTab2 #contentMain{
+    margin-top: 20px;
+    height: 398px;
+    /*background-color: aqua;*/
+}
+
+
+#wrap .contentWrap .content .contentTab3{
+    display: none;
+}
+#wrap .contentWrap .content .contentTab3 .concat{
+    color: rgba(30, 30, 30,1);
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #fff;
+}
+#wrap .contentWrap .content .contentTab3 .contentMain{
+    margin-top: 20px;
+    overflow: hidden;
+}
+#wrap .contentWrap .content .contentTab3 .contentMain .search{
+    float: left;
+    width: 800px;
+}
+#wrap .contentWrap .content .contentTab3 .contentMain .search .rowOut{
+    overflow: hidden;
+}
+#wrap .contentWrap .content .contentTab3 .contentMain .search .rowLeft{
+    float: left;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+    vertical-align: middle;
+    margin-right: 5px;
+    color: rgba(102, 102, 102, 1);
+    font-family: Microsoft YaHei;
+    font-size: 16px;
+}
+
+#wrap .contentWrap .content .contentTab3 .contentMain .search .text{
+    float: left;
+    padding: 5px 5px 0 5px;
+    border: 1px solid rgba(228, 228, 228, 1);
+    resize: none;
+    overflow: auto;
+    width: 520px;
+    height: 100px;
+    margin-bottom: 35px;
+    border-radius: 2px;
+    color: rgba(102, 102, 102, 1);
+    font-family: Microsoft YaHei;
+    font-size: 14px;
+}
+#wrap .contentWrap .content .contentTab3 .contentMain .search .InputText{
+    width: 500px;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    padding: 0 15px;
+    border: 1px solid rgba(228, 228, 228, 1);
+    background-color: #fff;
+    margin-bottom: 25px;
+    border-radius: 2px;
+    color: rgba(102, 102, 102, 1);
+    font-family: Microsoft YaHei;
+    font-size: 14px;
+}
+
+textarea::-webkit-input-placeholder,input::-webkit-input-placeholder{
+    color:darkgray;
+    font-family: Microsoft YaHei;
+    font-size: 14px;
+}
+
+
+#wrap .contentWrap .content .contentTab3 .contentMain .search .InputText.minText{
+    width: 300px;
+}
+#wrap .contentWrap .content .contentTab3 .contentMain .search .submit{
+    outline: none;
+    float: left;
+    border: 1px solid rgba(248, 130, 0, 1);
+    border-radius: 2px;
+    background-color: rgba(255, 179, 61, 1);
+    width: 230px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+#wrap .contentWrap .content .contentTab3 .contentMain .contentRight{
+    float: right;
+    width: 327px;
+    height: 464px;
+}
+@-webkit-keyframes fadeInUpBig {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 1000px, 0);
+        transform: translate3d(0, 1000px, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes fadeInUpBig {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 1000px, 0);
+        transform: translate3d(0, 1000px, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+#wrap .footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 270px;
+    width: 100%;
+    background-image: url("../../homepage/img/ddoowwb.png");
+    background-position: center 0;
+    overflow: hidden;
+    opacity: 0;
+}
+#wrap .footer .footerInner{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 120px;
+    height: 270px;
+}
+#wrap .footer .footerInner .inner1{
+    float: left;
+    width: 180px;
+    height: 70px;
+    margin-top: 50px;
+}
+#wrap .footer .footerInner .inner1 img{
+    width: 100%;
+    height: 100%;
+}
+#wrap .footer .footerInner .inner2{
+    float: left;
+    margin-top: 80px;
+    margin-left: 120px;
+}
+#wrap .footer .footerInner .inner2 span{
+    color: #696969;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 1px;
+}
+#wrap .footer .footerInner .inner3{
+    float: right;
+    margin-right: 100px;
+}
+#wrap .footer .footerInner .inner3 img{
+    display: block;
+    width: 104px;
+    height: 104px;
+}
+#wrap .footer .footerInner .inner3 p{
+    color: #333333;
+    font-size: 14px;
+    text-align: center;
+}
+
+/*==========以下部分是Validform必须的===========*/
+.Validform_checktip{
+    margin-left:8px;
+    line-height:20px;
+    height:20px;
+    overflow:hidden;
+    color:#999;
+    font-size:12px;
+}
+.Validform_right{
+    color:#71b83d;
+    padding-left:20px;
+    background:url(../img/right.png) no-repeat left center;
+}
+.Validform_wrong{
+    color:red;
+    padding-left:20px;
+    white-space:nowrap;
+    background:url(../img/error.png) no-repeat left center;
+}
+.Validform_loading{
+    padding-left:20px;
+    background:url(../img/onLoad.gif) no-repeat left center;
+}
+.Validform_error{
+    background-color:#ffe7e7;
+}
+#Validform_msg{color:#7d8289; font: 12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif; width:280px; -webkit-box-shadow:2px 2px 3px #aaa; -moz-box-shadow:2px 2px 3px #aaa; background:#fff; position:absolute; top:0px; right:50px; z-index:99999; display:none;filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#999999');}
+#Validform_msg .iframe{position:absolute; left:0px; top:-1px; z-index:-1;}
+#Validform_msg .Validform_title{line-height:25px; height:25px; text-align:left; font-weight:bold; padding:0 8px; color:#fff; position:relative; background-color:#000;}
+#Validform_msg a.Validform_close:link,#Validform_msg a.Validform_close:visited{line-height:22px; position:absolute; right:8px; top:0px; color:#fff; text-decoration:none;}
+#Validform_msg a.Validform_close:hover{color:#cc0;}
+#Validform_msg .Validform_info{padding:8px;border:1px solid #000; border-top:none; text-align:left;}
